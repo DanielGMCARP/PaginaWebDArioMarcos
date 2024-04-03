@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario de Inicio de Sesión</title>
+<style>
+    input:invalid {
+        border-color: rgb(255, 0, 0);
+    }
+    input[type="submit"] {
+        background-color: #4CAF50;
+        color: rgb(48, 31, 31);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #45a049;
+    }
+    ::placeholder {
+        color: rgb(255, 249, 249);
+    }
+    img {
+            max-width: 100%; 
+            height: auto; 
+            display: block; 
+            margin: 0 auto; 
+    }
+</style>
+</head>
+<body>
+
+<center><h2 style="color: brown;">Formulario de Inicio de Sesión</h2>
+<center><p>Bienvenido</p>
+<form action="#" method="post">
+    <div>
+        <center><label for="nombre">Nombre:</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="Ingrese un nombre..." required><br><br>
+    </div>
+    <div>
+        <center><label for="edad">Edad:</label><br>
+        <input type="number" id="edad" name="edad" placeholder="Ingrese su edad..." required><br><br>
+    </div>
+    <div>
+        <center><label for="correo">Correo:</label><br>
+        <input type="email" id="correo" name="correo" placeholder="Ingrese su correo..." pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required><br><br>
+    </div>
+    <input type="submit" value="Enviar">
+</form>
+<center><img src="https://support.asicentral.com/knowledgebase/images/GIFs/esplogin/esplogin.gif">
+    <section id="acerca">
+        <h2>Acerca de</h2>
+        <p>Hola Profe, esta es nuestra pagina OwO.</p>
+    </section>
+    
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>119121831.</p>
+    </section>
+    
+    <footer>
+        <p>DaniEnterpraises &copy; 2024</p>
+    </footer>
+    <link rel="stylesheet" href="style.css">
+</body>
+</html>
